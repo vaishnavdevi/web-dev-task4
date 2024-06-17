@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTT Platform Clone - Unicorn</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="images/logo.png" class="brand-logo" alt="">
+        <ul class="nav-links">
+            <li class="nav-items"><a href="#trending">Movies</a></li>
+            <li class="nav-items"><a href="#series">Series</a></li>
+            <li class="nav-items"><a href="#recommended">Recommended</a></li>
+            
+        </ul>
+		<!--
+        <div class="right-container">
+            <input type="text" class="search-box" placeholder="search">
+            <a href="login.html" class="login-link">Login</a>
+        </div>
+		-->
+    </nav>
+	
+	<div class="carousel-container">
+        <div class="carousel">
+            <div class="slider">
+                <div class="slide-content">
+                    <h1 class="movie-title">Loki</h1>
+                    <p class="movie-des">After stealing the Tesseract, Loki comes into contact with a mysterious organization that gives him an ominous ultimatum, either fix the timeline or cease to exist completely.</p>
+                </div>
+                <img src="images/slider 1.PNG" alt="Slide 1">
+            </div>
+            <div class="slider">
+                <div class="slide-content">
+                    <h1 class="movie-title">Falcon and the Winter Soldier</h1>
+                    <p class="movie-des">Falcon and the Winter Soldier are a mismatched duo who team up for a global adventure that will test their survival skills-- as well as their patience.</p>
+                </div>
+                <img src="images/slider 2.PNG" alt="Slide 2">
+            </div>
+            <div class="slider">
+                <div class="slide-content">
+                    <h1 class="movie-title">WandaVision</h1>
+                    <p class="movie-des">Vision and Wanda live a normal life in Westview and conceal their superpowers. However, as decades pass by, they start doubting that everything is not what it seems.</p>
+                </div>
+                <img src="images/slider 3.PNG" alt="Slide 3">
+            </div>
+            <div class="slider">
+                <div class="slide-content">
+                    <h1 class="movie-title">Raya and the Last Dragon</h1>
+                    <p class="movie-des">Raya, a warrior, sets out to track down Sisu, a dragon, who transferred all her powers into a magical gem which is now scattered all over the kingdom of Kumandra, dividing its people.</p>
+                </div>
+                <img src="images/slider 4.PNG" alt="Slide 4">
+            </div>
+            <div class="slider">
+                <div class="slide-content">
+                    <h1 class="movie-title">Luca</h1>
+                    <p class="movie-des">Luca, a sea monster, befriends Alberto, another one of his kind who takes him on a land adventure. He experiences an exciting summer while keeping his parents in the dark.</p>
+                </div>
+                <img src="images/slider 5.PNG" alt="Slide 5">
+            </div>
+        </div>
+    </div>
+	
+	<div class="video-card-container">
+        <div class="video-card">
+            <img src="images/disney.PNG" class="video-card-image" alt="">
+            <video src="videos/disney.mp4" mute loop class="card-video"></video>
+        </div>
+
+        <div class="video-card">
+            <img src="images/pixar.PNG" class="video-card-image" alt="">
+            <video src="videos/pixar.mp4" mute loop class="card-video"></video>
+        </div>
+
+        <div class="video-card">
+            <img src="images/marvel.PNG" class="video-card-image" alt="">
+            <video src="videos/marvel.mp4" mute loop class="card-video"></video>
+        </div>
+
+        <div class="video-card">
+            <img src="images/star-wars.PNG" class="video-card-image" alt="">
+            <video src="videos/star-war.mp4" mute loop class="card-video"></video>
+        </div>
+
+        <div class="video-card">
+            <img src="images/geographic.PNG" class="video-card-image" alt="">
+            <video src="videos/geographic.mp4" mute loop class="card-video"></video>
+        </div>
+    </div>
+	
+	
+    <main>
+        <section id="search-section">
+            <input type="text" id="search-bar" placeholder="Search for movies or series...">
+            <button id="search-button">Search</button>
+        </section>
+        <section id="search-results" class="content-grid">
+            <!-- Search results will be displayed here -->
+        </section>
+        <section id="trending">
+            <h1>Trending Movies</h1>
+            <div class="content-grid">
+                <a href="details.html?title=Movie%201&description=Description%20of%20Movie%201&genre=Action&releaseDate=2022-01-01&rating=4.5&trailerUrl=https://www.youtube.com/embed/QWbMckU3AOQ&reviews=%5B%22Great%20movie!%22,%20%22Loved%20it!%22%5D" class="content-item">
+                    <img src="images/poster 1.png" alt="Movie 1">
+                    <p>Movie 1</p>
+                </a>
+                <a href="details.html?title=Movie%202&description=Description%20of%20Movie%202&genre=Drama&releaseDate=2022-02-01&rating=4.0&trailerUrl=https://www.youtube.com/embed/KK8FHdFluOQ&reviews=%5B%22Very%20touching.%22,%20%22Well%20acted.%22%5D" class="content-item">
+                    <img src="images/poster 2.png" alt="Movie 2">
+                    <p>Movie 2</p>
+                </a>
+                <a href="details.html?title=Movie%203&description=Description%20of%20Movie%203&genre=Comedy&releaseDate=2022-03-01&rating=3.5&trailerUrl=https://www.youtube.com/embed/Hgeu5rhoxxY&reviews=%5B%22Hilarious!%22,%20%22A%20fun%20watch.%22%5D" class="content-item">
+                    <img src="images/poster 3.png" alt="Movie 3">
+                    <p>Movie 3</p>
+                </a>
+                <a href="details.html?title=Movie%204&description=Description%20of%20Movie%204&genre=Horror&releaseDate=2022-04-01&rating=4.8&trailerUrl=https://www.youtube.com/embed/hA6hldpSTF8&reviews=%5B%22Scary!%22,%20%22Very%20intense.%22%5D" class="content-item">
+                    <img src="images/poster 4.png" alt="Movie 4">
+                    <p>Movie 4</p>
+                </a>
+            </div>
+        </section>
+        <section id="series">
+            <h1>Trending Series</h1>
+            <div class="content-grid">
+                <a href="details.html?title=Series%201&description=Description%20of%20Series%201&genre=Action&releaseDate=2022-01-01&rating=4.5&trailerUrl=https://www.youtube.com/embed/ue80QwXMRHg&reviews=%5B%22Exciting!%22,%20%22Full%20of%20action.%22%5D" class="content-item">
+                    <img src="images/poster 5.png" alt="Series 1">
+                    <p>Series 1</p>
+                </a>
+                <a href="details.html?title=Series%202&description=Description%20of%20Series%202&genre=Drama&releaseDate=2022-02-01&rating=4.0&trailerUrl=https://www.youtube.com/embed/dug56u8NN7g&reviews=%5B%22Very%20dramatic.%22,%20%22Emotional.%22%5D" class="content-item">
+                    <img src="images/poster 6.png" alt="Series 2">
+                    <p>Series 2</p>
+                </a>
+                <a href="details.html?title=Series%203&description=Description%20of%20Series%203&genre=Comedy&releaseDate=2022-03-01&rating=3.5&trailerUrl=https://www.youtube.com/embed/IWBsDaFWyTE&reviews=%5B%22Laugh%20out%20loud!%22,%20%22So%20funny.%22%5D" class="content-item">
+                    <img src="images/poster 7.png" alt="Series 3">
+                    <p>Series 3</p>
+                </a>
+                <a href="details.html?title=Series%204&description=Description%20of%20Series%204&genre=Horror&releaseDate=2022-04-01&rating=4.8&trailerUrl=https://www.youtube.com/embed/xOsLIiBStEs&reviews=%5B%22Terrifying!%22,%20%22Can%27t%20watch%20alone.%22%5D" class="content-item">
+                    <img src="images/poster 8.png" alt="Series 4">
+                    <p>Series 4</p>
+                </a>
+            </div>
+        </section>
+        <section id="recommended">
+            <h1>Recommended for You</h1>
+            <div class="content-grid">
+                <a href="details.html?title=Recommended%201&description=Description%20of%20Recommended%201&genre=Action&releaseDate=2022-01-01&rating=4.5&trailerUrl=https://www.youtube.com/embed/1VIZ89FEjYI&reviews=%5B%22Highly%20recommended!%22,%20%22Must%20watch.%22%5D" class="content-item">
+                    <img src="images/poster 9.png" alt="Recommended 1">
+                    <p>Recommended 1</p>
+                </a>
+                <a href="details.html?title=Recommended%202&description=Description%20of%20Recommended%202&genre=Drama&releaseDate=2022-02-01&rating=4.0&trailerUrl=https://www.youtube.com/embed/6ZfuNTqbHE8&reviews=%5B%22Very%20moving.%22,%20%22Great%20story.%22%5D" class="content-item">
+                    <img src="images/poster 10.png" alt="Recommended 2">
+                    <p>Recommended 2</p>
+                </a>
+                <a href="details.html?title=Recommended%203&description=Description%20of%20Recommended%203&genre=Comedy&releaseDate=2022-03-01&rating=3.5&trailerUrl=https://www.youtube.com/embed/mYfJxlgR2jw&reviews=%5B%22So%20funny!%22,%20%22Loved%20every%20episode.%22%5D" class="content-item">
+                    <img src="images/poster 11.png" alt="Recommended 3">
+                    <p>Recommended 3</p>
+                </a>
+                <a href="details.html?title=Recommended%204&description=Description%20of%20Recommended%204&genre=Horror&releaseDate=2022-04-01&rating=4.8&trailerUrl=https://www.youtube.com/embed/zyYgDtY2AMY&reviews=%5B%22Frightening!%22,%20%22So%20scary.%22%5D" class="content-item">
+                    <img src="images/poster 12.png" alt="Recommended 4">
+                    <p>Recommended 4</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
